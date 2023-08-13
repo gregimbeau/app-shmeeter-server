@@ -83,11 +83,8 @@
     "description": {
       "type": "richtext"
     },
-    "pictures": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::picture.picture",
-      "inversedBy": "avatar"
+    "avatrUrl": {
+      "type": "string"
     }
   }
 }
