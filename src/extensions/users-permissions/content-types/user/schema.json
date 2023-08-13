@@ -90,6 +90,9 @@
       "relation": "oneToMany",
       "target": "api::post.post",
       "mappedBy": "author"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
