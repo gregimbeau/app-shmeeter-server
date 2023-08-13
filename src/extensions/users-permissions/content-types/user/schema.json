@@ -65,17 +65,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "avatar": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "displayName": {
       "type": "string"
     },
@@ -93,6 +82,12 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "pictures": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::picture.picture",
+      "inversedBy": "avatar"
     }
   }
 }
